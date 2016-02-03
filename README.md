@@ -40,6 +40,6 @@ jQuery SDK for [WordPress REST API](https://github.com/WP-API/WP-API).
 
 ## TEST
 
-![ GET ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-1.jpg)
-![ a wrong user DELETE a post ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-2.jpg)
-![ a right user DELETE a post ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-3.jpg)
+![ GET a post ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-1.jpg "GET a post")
+![ a wrong user DELETE a post ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-2.jpg "a wrong user DELETE a post")
+![ a right user DELETE a post ](https://raw.githubusercontent.com/CoolWP/WP-REST-API-jQuery/master/screenshot-3.jpg "a right user DELETE a post")
