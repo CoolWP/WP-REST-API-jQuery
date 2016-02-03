@@ -21,38 +21,34 @@
          <script src="./js/jqury.wp-rest-api.js"></script>
          <script>
          jQuery(function($){
-
              $('#login').on('click',function(e){
                 e.preventDefault();
-                    $(this).wpBasicAuth({
+                $(this).wpBasicAuth({
 
-                            url:'http://resttest.com/wp-json/wp/v2/posts/4',
-                            method: $('#action').val(),
-                            /*
-                            username and password.
-                            */
-                            /*               
-                            username:'suifengtec',
-                            password:'coolwp!r$',
-                            */
-                            /*
-                            or give it the selectors of the username and the password.
-                            */
-                            username_c:'#name',
-                            password_c:'#pswd',
-                            callback: function(status,data){
+                        url:'http://resttest.com/wp-json/wp/v2/posts/4',
+                        method: $('#action').val(),
+                        /*
+                        username and password.
+                        */
+                        /*               
+                        username:'suifengtec',
+                        password:'coolwp!r$',
+                        */
+                        /*
+                        or give it the selectors of the username and the password.
+                        */
+                        username_c:'#name',
+                        password_c:'#pswd',
+                        callback: function(status,data){
 
-                                window.console.log( 'status' );
-                                window.console.log( status );
-                                window.console.log( 'data' );
-                                window.console.log( data );
+                            window.console.log( 'status' );
+                            window.console.log( status );
+                            window.console.log( 'data' );
+                            window.console.log( data );
 
-                            }
-
-                    });
-
+                        }
+                });
              });
-          
          });
          </script>
     </body>
