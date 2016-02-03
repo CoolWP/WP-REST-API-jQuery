@@ -1,0 +1,14 @@
+{
+  "name": "jqwprestapibasicauth",
+  "authors": [
+    "suifengtec <suifengtec@qq.com>"
+  ],
+  "description": "WP REST API Basic Auth - jQuery",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://coolwp.com/wp-rest-api-basic-auth.html",
+  "dependencies": {
+    "jquery": "^1.12.0"
+  }
+}

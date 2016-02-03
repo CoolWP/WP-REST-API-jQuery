@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" value="suifengtec">
+        <title>WP REST API Basic Auth - jQuery</title>
+    </head>
+    <body>
+        <form>
+            <input type="text"  name="name" id="name" value="lee@coolwp.com"/>
+            <select name="action" id="action"/>
+            <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="UPDATE">UPDATE</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+            <input type="text"  name="pswd" id="pswd" value="coolwp!r$"/>
+            <input type="submit" name="login" id="login" value="Login">
+        </form>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+         <script src="./js/jqury.wp-rest-api.js"></script>
+         <script>
+         jQuery(function($){
+
+             $('#login').on('click',function(e){
+                e.preventDefault();
+                    $(this).wpBasicAuth({
+
+                            url:'http://resttest.com/wp-json/wp/v2/posts/4',
+                            method: $('#action').val(),
+                            /*
+                            username and password.
+                            */
+                            /*               
+                            username:'suifengtec',
+                            password:'coolwp!r$',
+                            */
+                            /*
+                            or give it the selectors of the username and the password.
+                            */
+                            username_c:'#name',
+                            password_c:'#pswd',
+                            callback: function(status,data){
+
+                                window.console.log( 'status' );
+                                window.console.log( status );
+                                window.console.log( 'data' );
+                                window.console.log( data );
+
+                            }
+
+                    });
+
+             });
+          
+         });
+         </script>
+    </body>
+</html>
